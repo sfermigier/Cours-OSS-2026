@@ -174,7 +174,6 @@ Vérifiez que votre rapport contient :
 Pratiquez le workflow de contribution sur un projet d'entraînement :
 
 - https://github.com/firstcontributions/first-contributions
-- Ou le dépôt de TD fourni par l'enseignant
 
 === Étapes à réaliser
 
@@ -203,11 +202,6 @@ Pratiquez le workflow de contribution sur un projet d'entraînement :
   ```
 + \[ \] Créer une Pull Request sur GitHub
 
-=== Questions
-
-+ Avez-vous rencontré des difficultés ? Lesquelles ?
-+ Combien de temps s'est écoulé avant que votre PR soit mergée ?
-
 #line(length: 100%)
 
 == Pour aller plus loin
@@ -221,7 +215,6 @@ Pratiquez le workflow de contribution sur un projet d'entraînement :
 === Lectures recommandées
 
 - *"Producing Open Source Software"* de Karl Fogel \(chapitre sur les contributions)
-- Guide Mozilla : https://mozilla.github.io/open-leadership-training-series/
 
 === Préparation séance 7
 
