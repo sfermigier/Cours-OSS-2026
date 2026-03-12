@@ -884,6 +884,110 @@ Ni libre, ni propriétaire traditionnel.
 **Réactions :** Forks communautaires (OpenSearch, OpenTofu, Valkey...)
 
 ---
+# Étude de cas : Chardet (2026)
+
+**Les faits :**
+- **chardet** : bibliothèque Python de détection d'encodage (~130M téléchargements/mois)
+- Maintenue depuis 12 ans par Dan Blanchard, auteur original : Mark Pilgrim
+- **Version 7.0** : réimplémentée par IA (Claude), 48× plus rapide, multi-cœurs
+- Licence changée de **LGPL → MIT**
+- Méthode : API + tests fournis à l'IA, sans lire le code source
+- Similarité JPlag : <1.3% avec les versions précédentes
+
+---
+# Chardet : la controverse
+
+::: columns
+::: column
+
+**Position du mainteneur**
+- Réimplémentation « clean room » via IA
+- Code entièrement nouveau
+- Pas d'obligation de conserver la LGPL
+- Amélioration majeure (performance)
+
+:::
+::: column
+
+**Objection de l'auteur original**
+- Exposition massive au projet existant
+- Contrat social avec les contributeurs
+- La LGPL protégeait leurs contributions
+- Relicensing = rupture de confiance
+
+:::
+:::
+
+::: box
+**Question centrale :** Une réimplémentation par IA est-elle une « œuvre nouvelle » ou une « œuvre dérivée » ?
+:::
+
+---
+# Chardet : trois points de vue
+
+**Armin Ronacher** (créateur de Flask) — *favorable* :
+> « La GPL va contre l'esprit du partage en restreignant ce qu'on peut faire. »
+- Voit l'IA comme libératrice des contraintes copyleft
+
+**Antirez** (créateur de Redis) — *favorable* :
+> « GNU a réimplémenté UNIX, Linux a réimplémenté via Minix. L'IA accélère un processus qui a toujours existé. »
+- Le copyright protège l'expression, pas les idées
+
+**Zoë Kooyman** (FSF) — *opposée* :
+> « Refuser aux autres les droits que vous avez reçus est profondément antisocial, quelle que soit la méthode. »
+
+---
+# Chardet : les enjeux
+
+::: columns
+::: column
+
+**Arguments « pro-réimplémentation »**
+- Légalement permis (pas de copie)
+- Précédent historique (GNU, Linux)
+- Accélère l'innovation
+- Rééquilibre face aux grandes entreprises
+
+:::
+::: column
+
+**Arguments « anti-réimplémentation »**
+- Légal ≠ légitime
+- Direction inversée (copyleft → permissif)
+- Contrat social brisé
+- Érode les protections du copyleft
+
+:::
+:::
+
+::: box
+**Ironie relevée :** Vercel a réimplémenté Bash (GPL) en MIT, mais s'est offusqué quand Cloudflare a réimplémenté Next.js (MIT).
+:::
+
+---
+# Chardet : questions ouvertes
+
+1. **Le droit d'auteur protège-t-il les spécifications ?** (API, tests, comportement)
+
+2. **Le code généré par IA est-il protégeable ?** (Pas de jurisprudence claire)
+
+3. **Faut-il un « copyleft de spécification » ?** (TGPL proposé par certains)
+
+4. **La vitesse change-t-elle la nature du processus ?** (Ce qui prenait 5 ans prend 5 jours)
+
+> « Nous sommes dans un nouveau monde et nous avons très peu d'idées sur comment y naviguer. » — Armin Ronacher
+
+---
+# Chardet : références
+
+**Sources et analyses :**
+
+- [Discussion GitHub originale](https://github.com/chardet/chardet/issues/327#issuecomment-4005195078)
+- [The Ship of Theseus](https://lucumr.pocoo.org/2026/3/5/theseus/) — Armin Ronacher
+- [AI and OSS licensing](https://antirez.com/news/162) — Antirez (Salvatore Sanfilippo)
+- [Legal vs Legitimate](https://writings.hongminhee.org/2026/03/legal-vs-legitimate/) — Hong Minhee
+
+---
 # Résumé
 
 ---
