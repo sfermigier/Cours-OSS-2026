@@ -60,7 +60,7 @@ Conclusion : 1) droit d'auteur ≠ droit des marques. 2) On ne peut pas prétend
 
 **Les faits :** The Document Foundation (TDF, fondation derrière LibreOffice) expulse **30+ membres** affiliés à Collabora, dont **7 des 10 principaux committers** et plusieurs fondateurs du projet.
 
-**Les griefs de Collabora (Michael Meeks) :**
+**Les griefs de Collabora (via Michael Meeks) :**
 - Le board a été rempli de **non-techniciens**
 - Les développeurs qui écrivent le code sont exclus de la **gouvernance**
 - Application sélective des **marques** (contre Collabora, pas contre d'autres)
