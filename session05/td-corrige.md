@@ -561,4 +561,4 @@ Alternative : **MIT** si vous voulez la simplicité maximale (mais pas de protec
 | Exercice 5 — Choisir une licence | /3 |
 | Exercice 6 — SPDX (bonus) | /1 |
 | Exercice 7 — Identifier licences (bonus) | /1 |
-| **Total** | **/20** |
+| **Total** | **… / 20** |

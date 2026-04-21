@@ -1,0 +1,10 @@
+[project]
+name = "cours-oss-2026-public"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "md2typst>=0.3.3",
+    "prezo>=2026.4.1",
+]

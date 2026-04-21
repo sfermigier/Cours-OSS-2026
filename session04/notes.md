@@ -72,11 +72,44 @@ Le droit d'auteur protège **l'expression** d'une idée, pas l'idée elle-même.
 
 ### Cas emblématiques
 
-- **Oracle vs Google** (2010-2021) : Google reprend ~11 500 lignes de déclarations d'APIs Java dans Android. La **Cour Suprême US tranche en 2021** : c'est du *fair use*. Mais elle laisse ouverte la question de fond : les APIs *peuvent* être protégées par le droit d'auteur.
-- **Affaire SCO** (2003-2021) : SCO prétend que Linux contient du code Unix. Échec total après 18 ans de procédure. Devenu un symbole des dérives des *patent trolls*.
-- **Apple vs Microsoft** (1988-94) sur le *look and feel* : Apple perd — les éléments **fonctionnels** d'une interface ne sont pas protégeables.
+Trois affaires structurent la jurisprudence moderne du logiciel, présentées ici dans l'ordre chronologique.
 
-**Note sur le *fair use*** : exception du droit américain qui autorise l'usage sans autorisation dans certains cas (usage transformatif, éducatif, parodie, critique…). Elle **n'existe pas en droit français**, où les exceptions sont plus limitées et strictement énumérées.
+#### Apple vs Microsoft / HP (1988-1994) — le *look and feel* de l'interface Mac
+
+Apple attaque **Microsoft** (Windows 2.0) et **Hewlett-Packard** (NewWave) pour violation de l'« *audiovisual copyright* » de l'interface du Macintosh. Le juge **Vaughn Walker** pose un principe structurant : seuls les **éléments d'expression originaux spécifiques** peuvent être protégés, **pas** le *look and feel* général ni les éléments **fonctionnels** (barre de menus, icônes comme métaphores de fichiers, fenêtres superposables, presse-papier…). Microsoft gagne l'essentiel des griefs en 1994 ; Apple appelle en vain.
+
+Portée : on ne peut pas monopoliser une **convention d'interaction**. C'est exactement la même logique qui sous-tendra *Oracle vs Google* trente ans plus tard sur les APIs.
+
+#### Affaire SCO vs IBM (2003-2021) — la longue agonie du FUD anti-Linux
+
+La société **SCO Group** (ex-Caldera International, renommée en 2002) prétend avoir acquis de **Novell** les *copyrights* sur Unix. En **mars 2003**, elle attaque **IBM** pour **1 milliard de dollars** : selon SCO, IBM aurait introduit du code Unix protégé dans Linux via AIX et Dynix. Elle étend ensuite ses attaques aux **utilisateurs finaux** (DaimlerChrysler, AutoZone) pour propager la peur dans tout l'écosystème.
+
+Arrière-plan financier : **Microsoft** achète à SCO une « licence Unix » pour environ 10 M\$ en 2003 ; **BayStar Capital** injecte 50 M\$ (prétendument à la suggestion de Microsoft). Beaucoup d'observateurs y voient un financement indirect d'une **guerre juridique contre Linux** à un moment où celui-ci menaçait les parts de marché de Windows Server.
+
+Réaction communautaire exemplaire : le blog **Groklaw**, animé par **Pamela Jones**, documente minutieusement chaque pièce du dossier, décode la jurisprudence pour les non-juristes, et démonte pièce par pièce les prétentions de SCO. C'est l'un des tout premiers cas où une **communauté open source s'organise juridiquement**, par un journalisme d'investigation citoyen distribué.
+
+Effondrement :
+
+- **Août 2007** — le juge **Dale Kimball** tranche : **c'est Novell qui détient les copyrights Unix**, pas SCO. Tout l'édifice juridique s'écroule.
+- **Septembre 2007** : SCO dépose le bilan (*Chapter 11*).
+- **2010** : un jury confirme que Novell est bien le titulaire.
+- **Août 2021** : IBM règle ce qu'il reste du contentieux avec le *trustee* de SCO pour **14,25 M\$** — clôture purement administrative.
+
+Portée. Le cas SCO est le cas d'école du **FUD** (*Fear, Uncertainty, Doubt*) comme stratégie anticoncurrentielle : semer le doute juridique sur un concurrent pour ralentir son adoption, même quand les griefs sont vides. C'est aussi la première grande démonstration qu'une **communauté peut résister juridiquement** à une telle attaque par la transparence documentaire.
+
+#### Oracle vs Google (2010-2021) — les APIs Java dans Android
+
+Oracle rachète Sun (et donc Java) en janvier 2010, puis attaque Google en août 2010 : Android reprend environ **11 500 lignes de déclarations** (signatures, structure et organisation — la *SSO*) sur 37 packages Java, sans licence. La procédure est spectaculairement longue :
+
+- 2012, juge **William Alsup** : les APIs ne sont **pas** protégeables par le droit d'auteur.
+- 2014, **Federal Circuit** (appel) : les APIs *peuvent* être protégées — inversion.
+- 2016, second procès : *fair use* retenu pour Google.
+- 2018, Federal Circuit : *fair use* rejeté — seconde inversion.
+- **Avril 2021, Cour Suprême (6-2, majorité Breyer)** : *fair use*. Quatre arguments : (1) les *declaring code* copiés sont indissociables des idées fonctionnelles qu'ils expriment — donc peu protégeables ; (2) l'usage est **transformatif** (Android = plateforme mobile nouvelle) ; (3) les 11 500 lignes ne représentent que **~0,4 %** du code concerné ; (4) pas d'effet de substitution sur le marché de Java. La Cour insiste surtout sur la nécessité de **ne pas stériliser l'écosystème** en permettant la monopolisation des APIs, qui « *limiterait la créativité de futurs programmes* ». Elle **ne tranche pas** la question de fond : elle raisonne « à supposer que les APIs soient protégeables ».
+
+Portée : les APIs *peuvent* l'être, mais leur réimplémentation propre peut être couverte par le *fair use*. Enjeu vital pour l'open source, qui pratique de longue date la réimplémentation (Wine pour Win32, Samba pour SMB/CIFS, glibc pour la libc, ReactOS…).
+
+> **Note sur le *fair use*** : exception du droit américain qui autorise l'usage sans autorisation dans certains cas (usage transformatif, éducatif, parodie, critique…). L'exception pour usage transformatif **n'existe pas de manière strictement équivalente en droit français**, où les exceptions sont plus limitées (art. L.122-5 CPI).
 
 ## Partie 4 — Qui détient les droits ?
 
@@ -104,32 +137,109 @@ C'est un piège très courant, à connaître si vous faites un stage qui produit
 
 ### Principe
 
-Un **brevet** est un **monopole temporaire** (20 ans) sur une invention technique, accordé en échange de la divulgation complète de l'invention. Conditions : nouveauté, activité inventive (non-évidence), application industrielle.
+Un **brevet** accorde à son titulaire un **monopole temporaire** (20 ans à compter du dépôt) sur une **invention technique**, en échange de sa **divulgation complète** au public — tout le monde peut lire le brevet, personne ne peut le mettre en œuvre sans licence. C'est le marché de base de la PI : on troque le secret industriel contre un monopole légal et borné dans le temps.
 
-### US vs Europe : deux régimes
+**Conditions de brevetabilité** :
 
-| États-Unis | Europe |
-|------------|--------|
-| Brevets logiciels largement acceptés | Logiciels « en tant que tels » **exclus** (Art. 52 CBE) |
-| Des millions de brevets déposés | Mais « inventions mises en œuvre par ordinateur » brevetables |
-| *Patent trolls* fréquents | Situation ambiguë ; directive 2005 **rejetée** par le Parlement européen |
-| Litiges coûteux | Peu de brevets purement logiciels |
+- **Nouveauté** — l'invention ne doit pas avoir été divulguée au public avant la date de dépôt, où que ce soit dans le monde (*absolute novelty*).
+- **Activité inventive** — elle doit ne pas être évidente pour une personne du métier.
+- **Application industrielle** — elle doit produire un effet technique reproductible.
+
+**Droit conféré** : le titulaire peut **exclure** autrui de fabriquer, utiliser, vendre ou importer l'invention brevetée. Ce n'est pas un droit d'usage (on peut tomber sous un brevet sans le savoir en créant soi-même la même chose), c'est un **droit d'interdire**. En contrepartie, des taxes de maintien annuelles.
+
+### Pourquoi le logiciel pose un problème spécifique
+
+Les brevets ont été conçus pour les inventions mécaniques ou chimiques — pas pour le code. Trois difficultés propres au logiciel :
+
+1. **Frontière avec les idées abstraites** : un algorithme est un raisonnement mathématique. Or les mathématiques et les idées abstraites ne sont traditionnellement **pas brevetables**. Où tracer la ligne ?
+2. **Caractère combinatoire** : un logiciel moderne assemble des milliers de techniques existantes. Si chacune peut être brevetée, le **minage** de brevets (*patent thickets*) devient impossible à auditer. Par construction, n'importe quel programme non trivial risque d'infringer sur des brevets sans que ses auteurs ne le sachent.
+3. **Cycle de vie court** : 20 ans est une éternité dans le logiciel. Un brevet qui couvre une technique de 2010 est toujours en vigueur en 2030 alors que tout l'écosystème a bougé.
+
+Ces trois frictions expliquent pourquoi le débat « faut-il breveter le logiciel ? » est structurellement différent de celui du brevet pharmaceutique ou mécanique.
+
+### États-Unis : une évolution en dents de scie
+
+La jurisprudence américaine a oscillé trois fois :
+
+- **1972 — *Gottschalk v. Benson*** : la Cour Suprême refuse un brevet sur un algorithme de conversion décimal/binaire. Un algorithme pur n'est pas brevetable.
+- **1981 — *Diamond v. Diehr*** : la Cour Suprême accepte un brevet sur un **procédé industriel** (vulcanisation du caoutchouc) qui utilise un algorithme. Ouvre la porte : un algorithme **appliqué à un procédé physique** peut être breveté.
+- **1998 — *State Street Bank v. Signature Financial*** : la Cour d'Appel Fédérale valide un brevet sur une **méthode d'affaires** implémentée en logiciel. **Explosion** des brevets logiciels : des dizaines de milliers de dépôts par an, souvent très larges, peu examinés.
+- **2010 — *Bilski v. Kappos*** : la Cour Suprême commence à freiner en rejetant un brevet sur une méthode de couverture de risque financier.
+- **2014 — *Alice Corp v. CLS Bank International*** : décision majeure. La Cour Suprême établit un **test en deux étapes** : (1) la revendication porte-t-elle sur une idée abstraite ? (2) si oui, contient-elle un « *inventive concept* » qui la transforme en application concrète ? Ce test a **invalidé des milliers de brevets** logiciels et business-method dans la décennie qui a suivi.
+
+Après *Alice*, le paysage US est moins permissif qu'il ne l'a été entre 1998 et 2014, mais les États-Unis restent **de loin** la juridiction la plus favorable aux brevets logiciels dans le monde.
+
+### Europe : exclusion théorique, pratique ambiguë
+
+**Article 52(2) de la Convention sur le Brevet Européen (CBE, 1973)** : les « **programmes d'ordinateur en tant que tels** » sont **exclus** de la brevetabilité, au même titre que les méthodes mathématiques, les méthodes d'affaires et les présentations d'information.
+
+Mais l'**Office européen des brevets (OEB)** a construit une doctrine dite du « **caractère technique** » (*technical effect*) : si un logiciel produit un **effet technique supplémentaire** au-delà de l'interaction normale avec l'ordinateur (ex. : contrôle d'une caméra, compression avec gain d'efficacité mesurable, chiffrement), alors il peut être breveté en tant qu'« invention mise en œuvre par ordinateur » (*computer-implemented invention*, CII). Résultat : **des dizaines de milliers de brevets CII** ont été accordés en Europe, malgré l'exclusion de principe. Le critère « *as such* » est devenu une ligne floue.
+
+**La directive 2005** (*CII directive*) aurait codifié cette pratique de l'OEB. Elle a été **rejetée** par le Parlement européen le **6 juillet 2005** par **648 voix contre 14** — vote historique après une campagne massive de la **FFII** (*Foundation for a Free Information Infrastructure*), portée notamment par des acteurs français (AFUL, April) et européens. Les brevets logiciels n'ont donc pas été explicitement codifiés en droit de l'UE ; la pratique de l'OEB perdure mais reste juridiquement contestée.
+
+**Nouveauté : la Juridiction Unifiée du Brevet (JUB / *UPC*)** — opérationnelle depuis le **1ᵉʳ juin 2023**. Elle centralise le contentieux sur les « brevets unitaires européens » dans la plupart des États membres. Effet probable : renforcement de l'exécution (*enforcement*) des brevets en Europe, y compris pour les CII. À surveiller.
 
 ### Cas emblématiques
 
-| Cas | Objet | Issue |
-|-----|-------|-------|
-| **Amazon 1-Click** | Achat en un clic | Validé aux US, rejeté en Europe |
-| **MPEG / H.264** | Codecs vidéo | Pool de brevets, royalties |
-| **Apple vs Samsung** | Design, *slide-to-unlock* | Batailles multiples, milliards en jeu |
-| **Blackberry (NTP)** | Email mobile | Règlement à 612 M $ |
+| Cas | Années | Objet | Issue |
+|-----|--------|-------|-------|
+| **Unisys / LZW** (GIF) | 1994-2004 | Algorithme de compression LZW utilisé dans GIF | Unisys réclame des royalties, déclenche la création de **PNG** comme alternative libre |
+| **Amazon 1-Click** | 1999-2017 | Achat en un clic | Validé aux US, rejeté en Europe (manque de caractère technique). Expiré en 2017 |
+| **MPEG / H.264** | 1996- | Codecs vidéo | *Pool* de brevets (**MPEG LA**) ; royalties par appareil. À l'origine de la pression pour des codecs libres (Theora, VP9, **AV1**) |
+| **MP3 / Fraunhofer** | 1989-2017 | Compression audio | Royalties versées par les encodeurs/lecteurs. Brevets **expirés en 2017** — MP3 effectivement libre depuis |
+| **NTP vs BlackBerry** | 2001-2006 | Email *push* mobile | NTP (patent troll) obtient **612,5 M$** en *settlement*. Cas emblématique du chantage aux brevets |
+| **Apple vs Samsung** | 2011-2018 | *Slide-to-unlock*, design | Condamnations croisées sur plusieurs continents. Apple récupère finalement ~539 M$ |
+| **Alice Corp v. CLS Bank** | 2014 | Plateforme d'échange financier | *Leading case* : invalidation des brevets abstraits mis en œuvre par ordinateur |
 
-**Ne pas confondre** avec Oracle vs Google (2021), qui concernait le **droit d'auteur** sur les APIs, pas les brevets.
+> **Ne pas confondre** avec *Oracle vs Google* (2021), qui concernait le **droit d'auteur** sur les APIs — pas les brevets.
 
-### Débats
+### Patent trolls (NPE / PAE)
 
-- **Pour** : protection des investissements R&D, incitation à innover, valorisation des startups.
-- **Contre** : brevets trop larges, frein à l'innovation, coûts de litiges, *patent trolls*. Argument historique : l'industrie du logiciel a innové pendant 50 ans **sans brevets**.
+Un ***patent troll*** — terme militant, désignation neutre : **NPE** (*Non-Practicing Entity*) ou **PAE** (*Patent Assertion Entity*) — est une entité qui **ne produit rien**, se contente d'**acheter des portefeuilles de brevets** et d'**assigner en justice** des entreprises opérantes. Modèle économique : extorsion (*settlement*) pour éviter des procès coûteux, même quand le brevet est douteux.
+
+Acteurs emblématiques :
+
+- **Intellectual Ventures** (Nathan Myhrvold, ex-Microsoft, fondé en 2000) — ~40 000 brevets en portefeuille à son apogée ; a levé plusieurs milliards auprès de fonds de pension.
+- **VirnetX vs Apple** — plusieurs centaines de millions en jugements successifs sur des brevets VPN/FaceTime.
+
+**Facteur aggravant US** : pendant longtemps, les procès se concentraient dans le **Eastern District of Texas** (tribunaux jugés *plaintiff-friendly*). Le *venue* a été restreint par la Cour Suprême dans ***TC Heartland v. Kraft Foods* (2017)**, ce qui a fait chuter significativement l'activité des trolls.
+
+### Défenses collectives de l'open source
+
+Face au risque, l'écosystème libre s'est organisé :
+
+- **OIN — *Open Invention Network*** (2005) : *pool* de brevets cross-licencié couvrant le « *Linux system* ». Membres (>4 000) : IBM, Google, Red Hat, SUSE, Sony, Microsoft (!) depuis 2018… Tout membre s'engage à ne pas attaquer les autres sur les brevets du pool.
+- **LOT Network** (*License on Transfer*, 2014) : ~5 000 membres. Engagement : si l'un vend un brevet à un *troll*, les autres reçoivent automatiquement une licence — neutralise la revente de portefeuilles aux NPE.
+- **Unified Patents** : organisation qui conteste les brevets trolls en procédure *inter partes review* (IPR).
+- **Pledges** publiques : IBM a *pledge* 500 brevets pour l'open source (2005) ; **Tesla** a ouvert tous ses brevets (2014, déclaration de bonne foi) ; **Red Hat Patent Promise**.
+- **Prior art** : bases collectives (ex. *Linux Defenders*) destinées à documenter l'antériorité et à invalider les brevets abusifs.
+
+Épisode marquant : **en 2007, Microsoft prétend que Linux viole 235 de ses brevets**, sans jamais les lister. Classique campagne de **FUD** (cf. cas SCO ci-dessus). La réaction : fondation/renforcement de l'OIN, accord Novell-Microsoft controversé (2006), puis, in fine, adhésion de Microsoft à l'OIN en 2018.
+
+### SEP et FRAND : un cas particulier
+
+Les **SEP** (*Standard Essential Patents*) sont les brevets indispensables pour mettre en œuvre un standard (H.264, MP3, 3G/4G/5G, Wi-Fi…). Les organismes de normalisation (**ETSI**, **IEEE**…) exigent que leurs titulaires s'engagent à les licencier à des conditions **FRAND** (*Fair, Reasonable and Non-Discriminatory*).
+
+Enjeu pour l'open source : une licence FRAND suppose souvent une **redevance par unité** et un **accord bilatéral**, ce qui est **incompatible** avec la libre redistribution. D'où les tensions récurrentes autour des codecs (H.264, HEVC) et l'effort pour produire des alternatives *royalty-free* (**AV1** par l'*Alliance for Open Media*, Opus pour l'audio).
+
+### Débat : arguments pour et contre
+
+**Arguments en faveur des brevets logiciels** :
+
+- Protection des investissements en R&D — sans monopole temporaire, pourquoi investir ?
+- Incitation à la **divulgation** (alternative au secret industriel) ;
+- Valorisation des startups (un portefeuille de brevets est un actif cédable) ;
+- Outil de négociation (*cross-licensing*) entre grands acteurs.
+
+**Arguments contre** :
+
+- Les **brevets sont souvent trop larges** et de piètre qualité (examen superficiel, surtout aux US pré-Alice) ;
+- **Freinage** de l'innovation incrémentale (rappeler qu'un logiciel moderne combine des milliers de techniques) ;
+- Coûts prohibitifs des litiges (millions de $ par procès) ; les **PME et l'open source** sont les premiers pénalisés ;
+- Les ***patent trolls*** détournent le système ;
+- **Argument historique** : l'industrie du logiciel a innové **pendant 40 ans (1960-2000)** essentiellement sans brevets ; la période post-*State Street Bank* n'a pas produit plus d'innovation, au contraire.
+
+**Position dominante dans l'écosystème open source** : hostilité de principe aux brevets logiciels, défense active par l'OIN, LOT et les *pledges*, et préférence marquée pour les licences à **clause brevets explicite** (Apache 2.0, GPL v3, MPL 2.0) — cf. session 5.
 
 ## Partie 6 — Les marques
 

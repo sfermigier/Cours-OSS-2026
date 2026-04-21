@@ -23,7 +23,7 @@
 #
 # Astuce : `make -j` pour paralléliser.
 
-PREZO ?= ~/projects/prezo/.venv/bin/prezo
+PREZO ?= prezo
 
 # ---------------------------------------------------------------------------
 # Découverte des sessions et des sources

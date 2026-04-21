@@ -24,7 +24,7 @@ Linus poste sur le newsgroup `comp.os.minix` :
 
 > *« I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu) for 386(486) AT clones. […] It is NOT portable (uses 386 task switching etc). »*
 
-L'ironie est célèbre : « won't be big and professional ». 30 ans plus tard, Linux fait tourner le TOP500 des supercalculateurs, tous les serveurs du cloud et 60 % des smartphones.
+L'ironie est célèbre : « won't be big and professional ». 30 ans plus tard, Linux fait tourner la totalité du TOP500 des supercalculateurs, la majorité des serveurs du cloud et 60 % des smartphones.
 
 ### Le modèle de développement
 

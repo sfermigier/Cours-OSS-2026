@@ -163,11 +163,11 @@ Dans ce cours, on utilise les deux termes de manière interchangeable, sauf ment
 | Serveurs web | Apache, Nginx |
 | Bases de données | PostgreSQL, MySQL, MariaDB, SQLite |
 | Langages | Python, Rust, Go |
-| Outils dev | Git, Vim/Neovim, Docker, Eclipse |
+| Outils dev | Git, Vim/Neovim, Eclipse |
 | Navigateurs | Firefox, Chromium |
 | Bureautique | LibreOffice, GIMP, Inkscape |
-| Cloud | Kubernetes, OpenStack |
-| IA/ML | TensorFlow, PyTorch, Hugging Face (modèles et outils) |
+| Cloud | OpenStack, Docker, Kubernetes |
+| IA/ML | TensorFlow, PyTorch, scikit-learn |
 
 ### Quelques chiffres
 
@@ -175,14 +175,14 @@ Dans ce cours, on utilise les deux termes de manière interchangeable, sauf ment
 - **90 %** des entreprises utilisent de l'open source (Red Hat 2023).
 - **100 %** des supercalculateurs du TOP500 et environ **60 %** des smartphones tournent sous Linux.
 - **4 %** de parts de marché sur le desktop en France (Linux reste marginal côté poste de travail).
-- **GitHub** : plus de 100 millions de développeurs et 400 millions de dépôts — attention, « GitHub » ≠ « open source » (beaucoup de dépôts sont privés, d'autres sans licence libre).
+- **GitHub** : plus de 100 millions de développeurs et 400 millions de dépôts — attention, « GitHub » ≠ « open source » (beaucoup de dépôts sont privés, d'autres sans licence libre, et par ailleurs la plateforme elle-même n'est pas libre).
 
 L'open source n'est plus une alternative marginale, c'est le standard de l'industrie.
 
 ### Qui développe l'open source ?
 
 - **Individus** : bénévoles, étudiants, freelances, passionnés.
-- **Organisations** : entreprises (Google, Microsoft, Red Hat, Meta, Intel…), fondations (Apache, Linux Foundation, Eclipse…), laboratoires et universités, administrations publiques.
+- **Organisations** : entreprises (GAFAM, Red Hat, Intel, AMD, NVidia, SUSE, SAP, Siemens…), fondations (Apache, Linux Foundation, Eclipse…), laboratoires et universités, administrations publiques.
 
 Chiffre à retenir : sur le noyau Linux, **plus de 80 %** des contributions viennent de développeurs **payés par des entreprises**. L'image du hacker bénévole isolé correspond de moins en moins à la réalité industrielle — elle reste vraie pour certains projets communautaires (Debian, une grande partie de l'écosystème Python, des bibliothèques critiques comme OpenSSL avant Heartbleed, cf. session 10).
 
