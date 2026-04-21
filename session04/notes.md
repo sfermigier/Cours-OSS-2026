@@ -266,5 +266,6 @@ Chaque famille sera étudiée en détail en **session 5**.
 
 ## Pour aller plus loin
 
-- Code de la propriété intellectuelle (partie logiciels) : <https://www.legifrance.gouv.fr>
-- Préparation session 5 : lire la licence MIT (très courte) ; parcourir le préambule de la GPL v3 ; regarder la licence d'un projet que vous utilisez.
+- Code de la propriété intellectuelle (partie logiciels) : <https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000006069414/>
+- Droit des Logiciels (F. Pellegrini et S. Canevet, 2013): <https://www.puf.com/droit-des-logiciels>
+- Livret bleu "Fondamentaux juridique": <https://cnll.fr/media/LivretBleu_Juridique-2eEdition_GT-LogicielLibre_Systematic_Nov2016_web.pdf>

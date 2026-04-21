@@ -9,15 +9,17 @@
 
 ## Pourquoi ce cours ?
 
-En vingt-cinq ans, le logiciel libre a radicalement transformé la façon dont les logiciels sont **conçus, développés, testés, déployés, vendus et maintenus**. Il structure aujourd'hui des pans entiers de l'industrie : cloud, conteneurs, données, IA. Il est aussi au cœur des débats sur l'**innovation ouverte**, la **souveraineté numérique** (européenne notamment) et l'**économie de l'immatériel**.
+En 40 ans, le logiciel libre a radicalement transformé la façon dont les logiciels sont **conçus, développés, testés, déployés, vendus et maintenus**. Il structure aujourd'hui des pans entiers de l'industrie : cloud, conteneurs, données, IA. Il est aussi au cœur des débats sur l'**innovation ouverte**, la **souveraineté numérique** (européenne notamment) et l'**économie de l'immatériel**.
 
-Ce cours aborde le logiciel libre non pas sous l'angle technique mais sous ses angles **économiques, juridiques et organisationnels** : comment fonctionnent les projets, comment ils se financent, comment ils sont régis, quelles licences s'appliquent et pourquoi. Le marché associé pèse plusieurs milliards d'euros et représente plus de 10 % du marché logiciel mondial.
+Ce cours aborde le logiciel libre non pas sous l'angle technique mais sous ses angles **économiques, juridiques et organisationnels** : comment fonctionnent les projets, comment ils se financent, comment ils sont régis, quelles licences s'appliquent et pourquoi. Le marché associé pèse 6 milliards d'euros en France et plus de 30 milliards en Europe, soient environ 10 % du marché informatique (logiciels et services) professionnel.
 
 ## Partie 1 — Qu'est-ce qu'un logiciel libre ?
 
 ### Code source vs binaire
 
-Un logiciel existe sous deux formes : le **code source**, lisible par un humain (ou un LLM), écrit dans un langage de programmation, et le **code binaire**, produit par la compilation et exécuté par la machine. Sans le code source, on ne peut ni comprendre précisément ce que fait un logiciel, ni le corriger, ni l'adapter. C'est pour cela que l'accès au code source est une condition de base du logiciel libre.
+Un logiciel existe souvent[^1] sous deux formes : le **code source**, lisible par un humain (ou un LLM), écrit dans un langage de programmation, et le **code binaire**, produit par la compilation et exécuté par la machine. Sans le code source, on ne peut ni comprendre précisément ce que fait un logiciel, ni le corriger, ni l'adapter. C'est pour cela que l'accès au code source est une condition de base du logiciel libre, sans être une conditions suffisante, comme nous allons le voir.
+
+[^1]: Une exception notable est celle des logiciels interprétés (Python, PHP, JavaScript...).
 
 ### Propriétaire vs libre
 
@@ -119,10 +121,13 @@ En pratique, **les deux définitions sont quasi équivalentes** : dans la quasi-
 ### Les organisations qui incarnent ces définitions
 
 - **FSF** (Free Software Foundation, 1985) — gardienne de la définition du logiciel libre et de la GPL. Très peu de salariés, posture éthique et militante.
+  - **FSFE** (Free Software Foundation Europe), **FSFE France**, **APRIL**: pendants européen / français de la FSF (avec parfois des divergences d'opinions sur certains sujets).
 - **OSI** (Open Source Initiative, 1998) — gardienne de l'Open Source Definition. Maintient la liste des licences officiellement « open source ».
 - **Linux Foundation** (2007, par fusion d'OSDL et du Free Standards Group) — fondation professionnelle hébergeant Linux et des centaines d'autres projets (Kubernetes, Node.js…). Financée par de grandes entreprises, poids lourd du secteur.
-- **Apache Software Foundation** (1999), **Eclipse Foundation**, **Python Software Foundation**… — fondations spécialisées par écosystème (gouvernance abordée en session 9).
+- **Apache Software Foundation** (1999), **Eclipse Foundation** — autres fondations généralistes.
+- **Python Software Foundation**… — fondations spécialisées par écosystème (gouvernance abordée en session 9).
 - **CNLL** (Conseil National du Logiciel Libre) et **APELL** (European Association of Professional Open Source) — représentants professionnels de la filière en France et en Europe.
+- Et beaucoups d'autres...
 
 ### L'Open Source Definition (OSD) — les 10 critères
 
