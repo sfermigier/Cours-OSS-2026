@@ -532,6 +532,17 @@ git push origin main
 5. **Patience** et **respect** envers les mainteneurs
 
 ---
+# Pour aller plus loin
+
+- **First Contributions** : https://github.com/firstcontributions/first-contributions
+- **Good First Issue** : https://goodfirstissue.dev
+- **How to Contribute to Open Source** (GitHub Guide) : https://opensource.guide/how-to-contribute/
+- **"Producing Open Source Software"** de Karl Fogel (chapitre sur les contributions)
+- **Guide Mozilla** : https://mozilla.github.io/open-leadership-training-series/
+- **MOOC Open Source Marsterclass**: https://opensourcemasterclass.org/
+
+
+---
 # **Pour la prochaine séance**
 
 **Séance 7 :** Contribuer efficacement — Bonnes pratiques

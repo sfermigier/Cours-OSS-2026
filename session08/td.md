@@ -5,7 +5,6 @@
 - Analyser et comparer différents modèles de gouvernance
 - Comprendre les mécanismes de prise de décision
 - Réfléchir aux enjeux du leadership dans l'open source
-- Concevoir une stratégie OSPO pour une entreprise
 
 ---
 
@@ -89,75 +88,9 @@ Vous êtes mainteneur d'un projet. Un contributeur propose un changement majeur 
 
 ---
 
-## Exercice 4 — Conception d'un OSPO (25 min)
+## Exercice 4 — Questions de réflexion (si temps restant)
 
-### Contexte
-
-Vous êtes consultant pour **TechCorp**, une entreprise de 500 développeurs qui édite des logiciels B2B. L'entreprise utilise massivement l'open source mais n'a aucune structure dédiée. La direction vous demande de proposer la création d'un OSPO.
-
-### Situation actuelle
-
-- 200+ projets internes utilisant de l'open source
-- Aucun inventaire des dépendances
-- Quelques développeurs contribuent "en cachette" sur leur temps libre
-- Un incident récent : utilisation d'une lib GPL dans un produit propriétaire
-- Volonté de la direction d'améliorer l'image tech de l'entreprise
-
-### 4.1 Mission et périmètre
-
-**Mission de l'OSPO (1-2 phrases) :**
-```
-____________________
-____________________
-```
-
-**Périmètre d'action :**
-- [ ] Conformité licences
-- [ ] Sécurité supply chain
-- [ ] Politique de contribution
-- [ ] Relations communautaires
-- [ ] Formation
-- [ ] Autre : ____________________
-
-### 4.2 Organisation
-
-**Rattachement proposé :**
-- [ ] Direction technique (CTO)
-- [ ] Direction juridique
-- [ ] Direction produit
-- [ ] Indépendant
-- Justification : ____________________
-
-**Équipe initiale :**
-| Rôle | Profil recherché | ETP |
-|------|------------------|-----|
-| | | |
-| | | |
-| | | |
-
-### 4.3 Priorités année 1
-
-**Listez 5 actions prioritaires ordonnées :**
-
-1. ____________________
-2. ____________________
-3. ____________________
-4. ____________________
-5. ____________________
-
-### 4.4 KPIs proposés
-
-| KPI | Cible année 1 | Méthode de mesure |
-|-----|---------------|-------------------|
-| | | |
-| | | |
-| | | |
-
----
-
-## Exercice 5 — Questions de réflexion (si temps restant)
-
-### 5.1 Le BDFL
+### 4.1 Le BDFL
 
 1. Quels sont les avantages d'avoir un BDFL pour un projet ?
 
@@ -165,7 +98,7 @@ ____________________
 
 3. Pourquoi Guido van Rossum a-t-il démissionné de son rôle de BDFL de Python en 2018 ?
 
-### 5.2 Les fondations
+### 4.2 Les fondations
 
 1. Pourquoi un projet choisirait-il de rejoindre une fondation comme Apache ou la Linux Foundation ?
 
@@ -173,7 +106,7 @@ ____________________
 
 3. Un projet peut-il perdre son indépendance en rejoignant une fondation ?
 
-### 5.3 Le burnout
+### 4.3 Le burnout
 
 Le burnout des mainteneurs est un problème croissant.
 

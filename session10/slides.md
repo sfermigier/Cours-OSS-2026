@@ -622,6 +622,51 @@ Un **contre-modèle vertueux** : une communauté qui se structure pour produire 
 **Objectif :** Garantir l'intégrité de la supply chain.
 
 ---
+# **Les cooldowns de dépendances**
+
+**Idée simple :** attendre quelques jours avant d'installer une nouvelle version d'un paquet.
+
+**Pourquoi ça marche :** dans la plupart des attaques récentes (Ultralytics, Nx, rspack, Shai Hulud…), la fenêtre entre publication du code malveillant et détection par la communauté est **< 1 semaine**. Un cooldown de 7 à 14 jours aurait bloqué la quasi-totalité de ces attaques.
+
+**Adoption massive en 2025-2026 :**
+- **pnpm**, **Yarn**, **Bun**, **uv** (Python), **npm** — tous ont introduit un paramètre `minimumReleaseAge` / `exclude-newer`
+- **Cargo**, **Go**, **NuGet** : en cours
+
+**Exemple (uv) :** `uv add --exclude-newer=7d requests`
+
+**À retenir :** c'est gratuit, facile, et probablement la mitigation la plus efficace contre les attaques supply chain modernes.
+
+**Sources :** William Woodruff — [blog.yossarian.net](https://blog.yossarian.net/2025/11/21/We-should-all-be-using-dependency-cooldowns) ; Cal Paterson — [calpaterson.com/deps.html](https://calpaterson.com/deps.html)
+
+---
+# **Bonnes pratiques — l'exemple Astral**
+
+**Astral** (éditeur de `uv` et `ruff`, largement utilisés en Python) a publié son *playbook* sécurité. Quelques principes simples :
+
+::: columns
+::: column
+
+**Protéger le code et le CI**
+- Authentification forte (2FA matérielle)
+- Droits minimaux par défaut
+- Fixer précisément les versions des outils utilisés dans le CI (pas de mise à jour automatique)
+
+:::
+::: column
+
+**Protéger les releases**
+- Supprimer les mots de passe/tokens long-lived
+- Signer chaque release, avec preuve vérifiable d'origine
+- Double approbation avant publication
+
+:::
+:::
+
+**Et côté dépendances :** minimiser, appliquer les cooldowns, contribuer aux projets amont dont on dépend, les financer si possible.
+
+**URL :** [astral.sh/blog/open-source-security-at-astral](https://astral.sh/blog/open-source-security-at-astral)
+
+---
 # **Partie 6**
 
 ## IA et sécurité open source
@@ -669,50 +714,6 @@ Les modèles de langage (LLM) transforment la recherche de vulnérabilités et l
 
 **Source :** [strix.ai/blog/cal-com-is-closing-its-code-due-to-ai-threats](https://www.strix.ai/blog/cal-com-is-closing-its-code-due-to-ai-threats)
 
----
-# **Les cooldowns de dépendances**
-
-**Idée simple :** attendre quelques jours avant d'installer une nouvelle version d'un paquet.
-
-**Pourquoi ça marche :** dans la plupart des attaques récentes (Ultralytics, Nx, rspack, Shai Hulud…), la fenêtre entre publication du code malveillant et détection par la communauté est **< 1 semaine**. Un cooldown de 7 à 14 jours aurait bloqué la quasi-totalité de ces attaques.
-
-**Adoption massive en 2025-2026 :**
-- **pnpm**, **Yarn**, **Bun**, **uv** (Python), **npm** — tous ont introduit un paramètre `minimumReleaseAge` / `exclude-newer`
-- **Cargo**, **Go**, **NuGet** : en cours
-
-**Exemple (uv) :** `uv add --exclude-newer=7d requests`
-
-**À retenir :** c'est gratuit, facile, et probablement la mitigation la plus efficace contre les attaques supply chain modernes.
-
-**Sources :** William Woodruff — [blog.yossarian.net](https://blog.yossarian.net/2025/11/21/We-should-all-be-using-dependency-cooldowns) ; Cal Paterson — [calpaterson.com/deps.html](https://calpaterson.com/deps.html)
-
----
-# **Bonnes pratiques — l'exemple Astral**
-
-**Astral** (éditeur de `uv` et `ruff`, largement utilisés en Python) a publié son *playbook* sécurité. Quelques principes simples :
-
-::: columns
-::: column
-
-**Protéger le code et le CI**
-- Authentification forte (2FA matérielle)
-- Droits minimaux par défaut
-- Fixer précisément les versions des outils utilisés dans le CI (pas de mise à jour automatique)
-
-:::
-::: column
-
-**Protéger les releases**
-- Supprimer les mots de passe/tokens long-lived
-- Signer chaque release, avec preuve vérifiable d'origine
-- Double approbation avant publication
-
-:::
-:::
-
-**Et côté dépendances :** minimiser, appliquer les cooldowns, contribuer aux projets amont dont on dépend, les financer si possible.
-
-**URL :** [astral.sh/blog/open-source-security-at-astral](https://astral.sh/blog/open-source-security-at-astral)
 
 ---
 # **Résumé**

@@ -600,7 +600,7 @@ Les 10 critères de l'Open Source Initiative (1998) :
 
 2. "Free" signifie **libre**, pas gratuit
 
-3. **Free Software** et **Open Source** désignent la même réalité technique, avec des philosophies différentes (complémentaires?)
+3. **Free Software** et **Open Source** désignent les mêmes réalités technique et juridique, avec des philosophies différentes (complémentaires?)
 
 4. L'open source est **omniprésent** dans l'industrie du logiciel
 

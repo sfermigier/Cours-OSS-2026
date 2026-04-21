@@ -27,7 +27,7 @@ Session 8 — Cours M1 Introduction aux Logiciels Libres
 - **Expliquer** le droit au fork et ses implications
 - **Analyser** les mécanismes de prise de décision
 - **Comprendre** le parcours pour devenir mainteneur
-- **Connaître** le rôle d'un OSPO en entreprise
+- **Comprendre** le rôle des fondations
 
 ---
 
@@ -60,7 +60,7 @@ Conclusion : 1) droit d'auteur ≠ droit des marques. 2) On ne peut pas prétend
 
 **Les faits :** The Document Foundation (TDF, fondation derrière LibreOffice) expulse **30+ membres** affiliés à Collabora, dont **7 des 10 principaux committers** et plusieurs fondateurs du projet.
 
-**Les griefs de Collabora (via Michael Meeks) :**
+**Les griefs de Collabora (Michael Meeks) :**
 - Le board a été rempli de **non-techniciens**
 - Les développeurs qui écrivent le code sont exclus de la **gouvernance**
 - Application sélective des **marques** (contre Collabora, pas contre d'autres)
@@ -521,92 +521,6 @@ Source : https://www.collaboraonline.com/blog/tdf-ejects-its-core-developers/
 
 ---
 
-# **Partie 6**
-
-## L'OSPO (Open Source Program Office)
-
----
-
-# **Qu'est-ce qu'un OSPO ?**
-
-**Open Source Program Office** — Structure dédiée à la gestion de l'open source en entreprise.
-
-::: columns
-::: column
-
-**Missions principales**
-- Politique d'utilisation
-- Conformité licences
-- Contribution upstream
-- Relations communautaires
-
-:::
-::: column
-
-**Rattachement**
-- CTO / Direction technique
-- Direction juridique
-- Parfois indépendant
-- Transverse aux équipes
-
-:::
-:::
-
----
-
-# **Pourquoi créer un OSPO ?**
-
-**Enjeux pour l'entreprise :**
-
-1. **Juridiques** — Conformité aux licences, gestion des risques
-2. **Sécurité** — Supply chain, vulnérabilités
-3. **Stratégiques** — Influence, recrutement, innovation
-4. **Économiques** — Optimisation des coûts, éviter le vendor lock-in
-
-> Les entreprises utilisent en moyenne 500+ composants open source.
-
----
-
-# **Les responsabilités d'un OSPO**
-
-::: columns
-::: column
-
-**Consommation**
-- Inventaire des dépendances
-- Validation des licences
-- Gestion des vulnérabilités
-- Formation des développeurs
-
-:::
-::: column
-
-**Contribution**
-- Politique de contribution
-- Process de validation
-- Relations avec les projets
-- Sponsoring / donations
-
-:::
-:::
-
----
-
-# **Entreprises avec un OSPO**
-
-| Entreprise | OSPO depuis | Focus |
-|------------|-------------|-------|
-| **Google** | 2004 | Innovation, Android, Kubernetes |
-| **Microsoft** | 2014 | Transformation, GitHub |
-| **Red Hat** | Origine | Core business |
-| **SAP** | 2017 | Conformité, contribution |
-| **Spotify** | 2018 | InnerSource, outils |
-| **SNCF** | 2020 | Souveraineté |
-
-**TODO Group** (Linux Foundation) : communauté de 80+ OSPO — https://todogroup.org/
-
----
-
 # **Résumé**
 
 ---
@@ -623,8 +537,6 @@ Source : https://www.collaboraonline.com/blog/tdf-ejects-its-core-developers/
 
 5. **Fondations** : Structures légales neutres pour les projets
 
-6. **OSPO** : Structure clé pour gouverner l'open source en entreprise
-
 ---
 
 # **Pour la prochaine séance**
@@ -633,6 +545,7 @@ Source : https://www.collaboraonline.com/blog/tdf-ejects-its-core-developers/
 
 **Préparation suggérée :**
 - Comment Red Hat gagne-t-il de l'argent avec des logiciels "gratuits" ?
+- Qu'est-ce qu'un OSPO ?
 - Qu'est-ce que l'InnerSource ?
 
 ---

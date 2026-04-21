@@ -17,8 +17,7 @@ En décembre 2021, la vulnérabilité CVE-2021-44228 (Log4Shell) a été découv
 ### Documents à consulter
 
 - CVE : https://nvd.nist.gov/vuln/detail/CVE-2021-44228
-- Analyse générale : https://en.wikipedia.org/wiki/Log4Shell
-- Analyse technique originelle : https://web.archive.org/web/20240616040703/https://www.lunasec.io/docs/blog/log4j-zero-day/
+- Analyse technique : https://www.lunasec.io/docs/blog/log4j-zero-day/
 
 ### Questions
 
@@ -91,7 +90,8 @@ Pour un projet de votre choix (ou le projet fourni), générez et analysez un SB
 Clonez un petit projet open source et générez son SBOM :
 
 ```bash
-# Installer Syft et Trivy
+# Installer Syft
+curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
 # Générer un SBOM
 syft dir:./mon-projet -o cyclonedx-json > sbom.json
@@ -153,7 +153,7 @@ Choisissez 2 projets parmi :
 ### Utilisation de Scorecard
 
 ```bash
-# Via l'API (pas d'installation), par exemple pour Flask:
+# Via l'API (pas d'installation)
 curl "https://api.securityscorecards.dev/projects/github.com/pallets/flask"
 ```
 
@@ -278,3 +278,8 @@ Pour chaque affirmation, indiquez si elle est vraie ou fausse et justifiez.
 - **Grype** — Scan de vulnérabilités
 - **Trivy** — Scanner tout-en-un
 - **Dependabot** — Mises à jour automatiques
+
+### Préparation examen (séance 11)
+1. Revoir les concepts clés des séances 1 à 10
+2. Préparer une fiche de synthèse personnelle
+3. Revoir les TD et corrigés

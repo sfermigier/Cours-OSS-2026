@@ -8,6 +8,8 @@ theme: dark
 ### Partie 1 : 1950-1990
 
 ::: spacer 2
+:::
+
 ::: center
 Session 2 — Cours M1 Open Source Software
 :::
@@ -34,7 +36,7 @@ Session 2 — Cours M1 Open Source Software
 ---
 # L'ère des mainframes
 
-![bg right:fit](images/ibm-mainframe.jpg)
+![bg right:fit](../images/ibm-mainframe.jpg)
 
 **Le contexte**
 - Ordinateurs = machines géantes et coûteuses
@@ -76,6 +78,7 @@ En 1969, IBM annonce le **unbundling** :
 - Opportunité commerciale identifiée
 
 ::: spacer 1
+:::
 
 ::: center
 **Le logiciel passe du statut de "bien commun" à "propriété commerciale".**
@@ -89,12 +92,12 @@ En 1969, IBM annonce le **unbundling** :
 ---
 # La chronologie d'Unix
 
-![](images/unix-timeline.png)
+![](../images/unix-timeline.png)
 
 ---
 # Unix : les origines (1969)
 
-![bg right:35%](images/thompson-ritchie.jpg)
+![bg right:35%](../images/thompson-ritchie.jpg)
 
 **Ken Thompson** et **Dennis Ritchie** créent Unix aux Bell Labs (AT&T)
 
@@ -112,7 +115,7 @@ En 1969, IBM annonce le **unbundling** :
 ---
 # Le PDP-7 : berceau d'Unix
 
-![bg right:50% contain](images/pdp7.jpg)
+![bg right:50% contain](../images/pdp7.jpg)
 
 En 1969, Ken Thompson trouve un PDP-7 inutilisé aux Bell Labs.
 
@@ -152,7 +155,7 @@ C'est sur cette machine que Thompson écrit la première version d'Unix, initial
 ---
 # Architecture Unix
 
-![bg right:50% 90%](images/unix-arch.png)
+![bg right:50% 90%](../images/unix-arch.png)
 
 **Kernel** : Contrôle le système.
 Gestion des processus, communication avec les périphériques, système de fichiers.
@@ -186,7 +189,7 @@ L'invention des pipes par Doug McIlroy a donné naissance à la philosophie Unix
 ---
 # Doug McIlroy (1978)
 
-![bg left:30%](images/mcilroy.jpeg)
+![bg left:30%](../images/mcilroy.jpeg)
 
 Les règles fondamentales de la philosophie Unix :
 
@@ -201,7 +204,7 @@ Les règles fondamentales de la philosophie Unix :
 ---
 # Les règles d'Eric S. Raymond
 
-![bg right:25%](images/art-unix-programming.jpg)
+![bg right:25%](../images/art-unix-programming.jpg)
 
 - **Modularity**: Write simple parts connected by clean interfaces
 - **Clarity**: Clarity is better than cleverness
@@ -299,7 +302,7 @@ Au MIT, une communauté de programmeurs développe une culture unique :
 ---
 # L'essor du logiciel commercial
 
-![bg right:36% contain](images/letter-to-hobbyists.jpg)
+![bg right:36% contain](../images/letter-to-hobbyists.jpg)
 
 | Année | Événement |
 |-------|-----------|
@@ -352,7 +355,7 @@ Au début des années 80, le laboratoire d'IA du MIT se vide :
 ---
 # L'imprimante Xerox 9700
 
-![bg right:50% contain](images/xerox.png)
+![bg right:50% contain](../images/xerox.png)
 
 Cet incident est le **mythe fondateur** du mouvement du logiciel libre.
 
@@ -368,7 +371,7 @@ Stallman voulait simplement ajouter une notification quand le papier était coin
 ---
 # Richard Stallman
 
-![bg right:30%](images/rms.jpg)
+![bg right:30%](../images/rms.jpg)
 
 ::: columns
 ::: column
@@ -395,12 +398,13 @@ Stallman voulait simplement ajouter une notification quand le papier était coin
 # Vidéo : RMS explique les libertés
 
 ::: center
-[Cliquer pour voir la vidéo : RMS "Liberté, Égalité, Fraternité"](movies/rms.mov)
+[Cliquer pour voir la vidéo : RMS "Liberté, Égalité, Fraternité"](../movies/rms.mov)
 
 *(Ouvrir avec VLC)*
 :::
 
 ::: spacer 1
+:::
 
 > "Liberté, Égalité, Fraternité" — Richard Stallman
 
@@ -591,6 +595,8 @@ X Window utilise une licence **très permissive** (MIT License) — un autre mod
 # Questions ?
 
 ::: spacer 3
+:::
+
 ::: center
 **Passons au TD**
 :::
