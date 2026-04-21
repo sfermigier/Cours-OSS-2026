@@ -100,12 +100,13 @@ Ce cours doit beaucoup aux enseignants et chercheurs qui m'ont précédé sur ce
 - **Dirk Riehle** (Friedrich-Alexander University Erlangen-Nürnberg) — deux cours universitaires complets : **FOSS** (*Free/Libre and Open Source Software*) et **COSS** (*Commercial Open Source Software*), ainsi qu'une trentaine d'articles de recherche sur l'économie et la gouvernance de l'open source. Matériaux sous licence CC BY 4.0. [dirkriehle.com](https://dirkriehle.com/).
 - **François Pellegrini** (Université de Bordeaux) — cours et ouvrage *Droit des logiciels* (avec Sébastien Canevet, PUF, 2013), référence francophone sur le cadre juridique du logiciel.
 - **Roberto Di Cosmo** (Inria, ENS, directeur de **Software Heritage**) — co-auteur du *Hold-Up planétaire* (1998), pionnier en France de l'enseignement et de la défense du logiciel libre en milieu universitaire.
-- Cours **Mineure OSS à l'EPITA (2022)** — promotion antérieure de cet enseignement, dont la structure pédagogique a directement influencé celle-ci.
 
 La section sur le **Cyber Resilience Act** (session 10) s'appuie largement sur le [guide CNLL / inno³](https://code.inno3.eu/ouvert/guide-cra) co-rédigé avec inno3.
 
 Les erreurs et approximations qui subsistent sont, bien sûr, exclusivement de mon fait.
 
-## Auteur
+## Auteur & Licence
 
 Stéfane Fermigier — Abilian SAS
+
+Licence: Creative Commons CC-BY-SA
