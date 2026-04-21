@@ -85,11 +85,26 @@ Les présentations utilisent le format **Prezo** (similaire à Marp), compilé e
 - *Code Rush* (D. Winton, 2000) — documentaire sur la libération du code de Netscape
 - *Python: the Documentary* (I. L. Bechtle, 2025) - documentaire sur l'histoire de Python 
 
-### Sites de référence
+### Quelques sites de référence
 - [GNU.org](https://www.gnu.org/) — Free Software Foundation
 - [OpenSource.org](https://opensource.org/) — Open Source Initiative
 - [SPDX License List](https://spdx.org/licenses/)
 - [Choose a License](https://choosealicense.com/)
+
+## Remerciements — sources d'inspiration
+
+Ce cours doit beaucoup aux enseignants et chercheurs qui m'ont précédé sur ces sujets et dont les cours, articles et ouvrages ont nourri la réflexion, la structuration et parfois la substances des sessions.
+
+- **Stefano Zacchiroli** (Télécom Paris / Institut Polytechnique de Paris, ex-Université Paris Diderot) — cours *Logiciels Libres* 2019-2020 (CC BY-SA 4.0). [Site du cours](https://upsilon.cc/zack/teaching/1920/loglib/).
+- **Théo Zimmermann** (Télécom Paris / Inria), et **Marc Jeanmougin** (Télécom Paris) pour la promotion 2025 — cours *Logiciels Libres* et INF113 *Contribution à un logiciel libre* (2022, 2023, 2025).
+- **Dirk Riehle** (Friedrich-Alexander University Erlangen-Nürnberg) — deux cours universitaires complets : **FOSS** (*Free/Libre and Open Source Software*) et **COSS** (*Commercial Open Source Software*), ainsi qu'une trentaine d'articles de recherche sur l'économie et la gouvernance de l'open source. Matériaux sous licence CC BY 4.0. [dirkriehle.com](https://dirkriehle.com/).
+- **François Pellegrini** (Université de Bordeaux) — cours et ouvrage *Droit des logiciels* (avec Sébastien Canevet, PUF, 2013), référence francophone sur le cadre juridique du logiciel.
+- **Roberto Di Cosmo** (Inria, ENS, directeur de **Software Heritage**) — co-auteur du *Hold-Up planétaire* (1998), pionnier en France de l'enseignement et de la défense du logiciel libre en milieu universitaire.
+- Cours **Mineure OSS à l'EPITA (2022)** — promotion antérieure de cet enseignement, dont la structure pédagogique a directement influencé celle-ci.
+
+La section sur le **Cyber Resilience Act** (session 10) s'appuie largement sur le [guide CNLL / inno³](https://code.inno3.eu/ouvert/guide-cra) co-rédigé avec inno3.
+
+Les erreurs et approximations qui subsistent sont, bien sûr, exclusivement de mon fait.
 
 ## Auteur
 
