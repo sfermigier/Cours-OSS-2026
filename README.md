@@ -19,48 +19,71 @@ Ce cours offre une introduction complète au monde des logiciels libres et open 
 - Comprendre les modèles économiques de l'open source
 - Identifier les enjeux de sécurité liés à la supply chain logicielle
 
-## Programme prévisionnel (12 sessions)
+## Programme (10 sessions)
 
-| Session | Thème | Description |
-|---------|-------|-------------|
-| 1 | **Introduction aux Logiciels Libres** | Définitions, 4 libertés, Free Software vs Open Source, panorama de l'écosystème |
-| 2 | **Histoire du Logiciel Libre (1950-1990)** | Mainframes, Unix, philosophie Unix, culture hacker, projet GNU, FSF |
-| 3 | **Histoire du Logiciel Libre (1990-aujourd'hui)** | Linux, distributions, Cathedral & Bazaar, fondations, controverses |
-| 4 | **Droit et Propriété Intellectuelle** | Droit d'auteur, brevets, marques, copyleft, bases juridiques |
-| 5 | **Les Licences Libres — Fondamentaux** | Licences permissives (MIT, BSD, Apache), copyleft (GPL, AGPL, LGPL, MPL) |
-| 6 | **Les Licences Libres — Approfondissement** | Compatibilité, SPDX, DCO/CLA, double licence, cas pratiques |
-| 7 | **Contribuer à un Projet Open Source** | Évaluation de projets, types de contributions, workflow Git |
-| 8 | **Contribuer Efficacement** | Pull requests, messages de commit, communication, revue de code |
-| 9 | **Gouvernance des Projets Open Source** | BDFL, méritocratie, fondations, droit au fork, prise de décision |
-| 10 | **Modèles Économiques de l'Open Source** | Double licence, open core, support, SaaS, donations, venture capital |
-| 11 | **Supply Chain et Sécurité** | Dépendances, Log4Shell, XZ Utils, SBOM, scan de vulnérabilités |
-| 12 | **Open Source en Entreprise et Synthèse** | OSPO, InnerSource, conformité, récapitulatif du cours |
+Chaque session comprend des slides de cours, des notes rédigées, et un TD (parfois accompagné d'un corrigé).
 
-NB: le programme sera amené à évoluer.
+| # | Thème | Documents |
+|---|-------|-----------|
+| 1 | Introduction aux Logiciels Libres | [Slides](session01/slides.pdf), [notes de cours](session01/notes.pdf), [TD](session01/td.pdf) |
+| 2 | Histoire du Logiciel Libre (1950-1990) | [Slides](session02/slides.pdf), [notes de cours](session02/notes.pdf), [TD](session02/td.pdf) |
+| 3 | Histoire du Logiciel Libre (1990-aujourd'hui) | [Slides](session03/slides.pdf), [notes de cours](session03/notes.pdf), [TD](session03/td.pdf) |
+| 4 | Droit et propriété intellectuelle du logiciel | [Slides](session04/slides.pdf), [notes de cours](session04/notes.pdf), [TD](session04/td.pdf), [corrigé](session04/td-corrige.pdf) |
+| 5 | Maîtriser les licences libres | [Slides](session05/slides.pdf), [notes de cours](session05/notes.pdf), [TD](session05/td.pdf), [corrigé](session05/td-corrige.pdf) |
+| 6 | Contribuer à un projet open source — Fondamentaux | [Slides](session06/slides.pdf), [notes de cours](session06/notes.pdf), [TD](session06/td.pdf), [corrigé](session06/td-corrige.pdf) |
+| 7 | Contribuer efficacement — Bonnes pratiques | [Slides](session07/slides.pdf), [notes de cours](session07/notes.pdf), [TD](session07/td.pdf) |
+| 8 | Gouvernance des projets open source | [Slides](session08/slides.pdf), [notes de cours](session08/notes.pdf), [TD](session08/td.pdf) |
+| 9 | Modèles économiques et open source en entreprise | [Slides](session09/slides.pdf), [notes de cours](session09/notes.pdf), [TD](session09/td.pdf), [corrigé](session09/td-corrige.pdf) |
+| 10 | Supply chain et sécurité | [Slides](session10/slides.pdf), [notes de cours](session10/notes.pdf), [TD](session10/td.pdf), [corrigé](session10/td-corrige.pdf) |
+
+## Livret de cours
+
+L'ensemble des notes de cours est également rassemblé dans un livret unique, plus pratique pour la lecture linéaire et l'impression :
+
+- 📘 **[Livret complet (PDF)](livret/livret.pdf)** — *Introduction aux logiciels libres — Notes de cours* (80 pages environ)
+
+## ⚠️ Remarques sur le contenu
+
+> Les textes de ce dépôt (slides, notes, TD et livret) ont été relus mais contiennent **probablement encore des erreurs, des oublis ou des approximations excessives**.
+>
+> Si vous repérez une erreur (factuelle, juridique, typographique, etc.), une imprécision ou un passage à clarifier, **n'hésitez pas à la signaler via le [bug tracker](https://github.com/sfermigier/Cours-OSS-2026/issues)** du dépôt (ou par *pull request* si vous êtes à l'aise avec Git). Toute contribution est bienvenue et sera créditée.
 
 ## Évaluation
 
-- **Examen partiel** (après la session 6) : 1 heure
-- **Examen final** : 1 heure
+- **Examen partiel** (après la session 5) : 1 heure
+- **Examen final** : 1 heure 1/2
 - **Projet** : contribution à un projet open source existant
 
 ## Structure du dépôt
 
 ```
-└── session01/ à session12/   # Slides de cours (format Markdown, PDF) et TD
+├── session01/ … session10/   # Slides, notes et TD (sources Markdown + PDF)
+├── livret/                   # Livret compilé (Typst) à partir des notes
+└── scripts/                  # Scripts de build (PDF, livret, etc.)
 ```
 
 ## Format des slides
 
-Les présentations utilisent le format **Prezo** (similaire à Marp).
+Les présentations utilisent le format **Prezo** (similaire à Marp), compilé en PDF via `make`. Le livret et les notes sont produits avec **Typst** via **md2typst**.
 
 ## Ressources complémentaires
 
 ### Livres recommandés
-- *The Cathedral and the Bazaar* — Eric S. Raymond
-- *Free as in Freedom* — Sam Williams (biographie de RMS)
-- *The Art of Unix Programming* — Eric S. Raymond
-- *Producing Open Source Software* — Karl Fogel
+- *The Cathedral and the Bazaar* — Eric S. Raymond (1999)
+- *Free as in Freedom* — Sam Williams (2002) — biographie de RMS
+- *The Art of Unix Programming* — Eric S. Raymond (2003)
+- *Producing Open Source Software* — Karl Fogel (2005, mis à jour régulièrement en ligne)
+- *Hackers: Heroes of the Computer Revolution* — Steven Levy (1984) — culture hacker, MIT AI Lab
+- *A Quarter Century of Unix* — Peter Salus (1994) — histoire d'Unix
+- *Le Hold-Up planétaire* — Roberto Di Cosmo & Dominique Nora (1998) — critique des monopoles logiciels
+- *Just for Fun* — Linus Torvalds & David Diamond (2001) — autobiographie de Torvalds
+- *Droit des logiciels* — François Pellegrini & Sébastien Canevet (PUF, 2013) — cadre juridique français
+- *Working in Public* — Nadia Eghbal (2020) — économie et sociologie des mainteneurs
+
+### Films documentaires
+- *Revolution OS* (J.T.S. Moore, 2001) — documentaire sur la naissance du mouvement open source (Linus Torvalds, Richard Stallman, Eric Raymond, Bruce Perens…)
+- *Code Rush* (D. Winton, 2000) — documentaire sur la libération du code de Netscape
+- *Python: the Documentary* (I. L. Bechtle, 2025) - documentaire sur l'histoire de Python 
 
 ### Sites de référence
 - [GNU.org](https://www.gnu.org/) — Free Software Foundation
