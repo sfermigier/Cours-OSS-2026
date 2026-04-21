@@ -17,7 +17,7 @@ Ce cours aborde le logiciel libre non pas sous l'angle technique mais sous ses a
 
 ### Code source vs binaire
 
-Un logiciel existe souvent[^1] sous deux formes : le **code source**, lisible par un humain (ou un LLM), écrit dans un langage de programmation, et le **code binaire**, produit par la compilation et exécuté par la machine. Sans le code source, on ne peut ni comprendre précisément ce que fait un logiciel, ni le corriger, ni l'adapter. C'est pour cela que l'accès au code source est une condition de base du logiciel libre, sans être une conditions suffisante, comme nous allons le voir.
+Un logiciel existe souvent[^1] sous deux formes : le **code source**, lisible par un humain (ou un LLM), écrit dans un langage de programmation, et le **code binaire**, produit par la compilation et exécuté par la machine. Sans le code source, on ne peut ni comprendre précisément ce que fait un logiciel, ni le corriger, ni l'adapter. C'est pour cela que l'accès au code source est une condition de base du logiciel libre, sans être une condition suffisante, comme nous allons le voir.
 
 [^1]: Une exception notable est celle des logiciels interprétés (Python, PHP, JavaScript...).
 
