@@ -353,7 +353,7 @@ La France a un tissu d'éditeurs et d'intégrateurs open source significatif.
 | Entreprise | Modèle | Produit / Activité |
 |------------|--------|-------------------|
 | **Nexedi** | Services + SaaS | ERP5, SlapOS |
-| **XWiki** | Open core + SaaS | Wiki d'entreprise, CryptPad |
+| **XWiki** | Support, SaaS, Module OSS payants | Wiki d'entreprise, CryptPad |
 | **Rudder** | Open core | Automatisation IT / conformité |
 | **Centreon** | Open core | Supervision informatique |
 | **Smile** | Services / intégration | Plus grand intégrateur européen |
@@ -361,7 +361,7 @@ La France a un tissu d'éditeurs et d'intégrateurs open source significatif.
 | **BlueMind** | Open core | Messagerie collaborative |
 | **Enalean** | Open core + services | Tuleap (ALM) |
 
-**Structuration :** CNLL (Union des entreprises du logiciel libre), OSSFR (ex-April).
+**Structuration :** CNLL (Union des entreprises du logiciel libre)
 
 ---
 
